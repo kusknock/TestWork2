@@ -67,10 +67,10 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnEditOwners = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddHouse = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDeleteHouse = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnContextRefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.tabEditDb = new System.Windows.Forms.TabPage();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.btnContextRefresh = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDeleteHouse = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -94,6 +94,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 40);
@@ -441,6 +442,7 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.ContextMenuStrip = this.contextMenuStrip1;
@@ -462,7 +464,7 @@
             this.btnDeleteHouse,
             this.btnContextRefresh});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(257, 128);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(257, 100);
             // 
             // btnEditOwners
             // 
@@ -477,6 +479,20 @@
             this.btnAddHouse.Size = new System.Drawing.Size(256, 24);
             this.btnAddHouse.Text = "Добавить дом";
             this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click);
+            // 
+            // btnDeleteHouse
+            // 
+            this.btnDeleteHouse.Name = "btnDeleteHouse";
+            this.btnDeleteHouse.Size = new System.Drawing.Size(256, 24);
+            this.btnDeleteHouse.Text = "Удалить дом";
+            this.btnDeleteHouse.Click += new System.EventHandler(this.btnDeleteHouse_Click);
+            // 
+            // btnContextRefresh
+            // 
+            this.btnContextRefresh.Name = "btnContextRefresh";
+            this.btnContextRefresh.Size = new System.Drawing.Size(256, 24);
+            this.btnContextRefresh.Text = "Обновить таблицу";
+            this.btnContextRefresh.Click += new System.EventHandler(this.btnRefreshDb_Click);
             // 
             // tabEditDb
             // 
@@ -493,20 +509,6 @@
             // bindingSource2
             // 
             this.bindingSource2.AllowNew = true;
-            // 
-            // btnContextRefresh
-            // 
-            this.btnContextRefresh.Name = "btnContextRefresh";
-            this.btnContextRefresh.Size = new System.Drawing.Size(256, 24);
-            this.btnContextRefresh.Text = "Обновить таблицу";
-            this.btnContextRefresh.Click += new System.EventHandler(this.btnRefreshDb_Click);
-            // 
-            // btnDeleteHouse
-            // 
-            this.btnDeleteHouse.Name = "btnDeleteHouse";
-            this.btnDeleteHouse.Size = new System.Drawing.Size(256, 24);
-            this.btnDeleteHouse.Text = "Удалить дом";
-            this.btnDeleteHouse.Click += new System.EventHandler(this.btnDeleteHouse_Click);
             // 
             // EditForm
             // 

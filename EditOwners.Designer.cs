@@ -44,6 +44,7 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(12, 12);
@@ -55,6 +56,8 @@
             // 
             // btnAcceptEdit
             // 
+            this.btnAcceptEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAcceptEdit.Location = new System.Drawing.Point(12, 467);
             this.btnAcceptEdit.Name = "btnAcceptEdit";
             this.btnAcceptEdit.Size = new System.Drawing.Size(796, 32);
@@ -65,6 +68,7 @@
             // 
             // btnRefreshBtn
             // 
+            this.btnRefreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefreshBtn.Image = ((System.Drawing.Image)(resources.GetObject("btnRefreshBtn.Image")));
             this.btnRefreshBtn.Location = new System.Drawing.Point(814, 467);
             this.btnRefreshBtn.Name = "btnRefreshBtn";

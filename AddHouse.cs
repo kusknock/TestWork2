@@ -68,7 +68,8 @@ namespace TestWork2
         {
             try
             {
-                Command = @"insert into houses(apartments, type, number, street) 
+                Command = $@"pragma recursive_triggers = true;
+                            insert into houses(apartments, type, number, street) 
                             values(@apartments, @type, @number, @street)";
 
                 List<SQLiteParameter> parms = new List<SQLiteParameter>()
@@ -80,6 +81,7 @@ namespace TestWork2
                 };
 
                 SqliteHelper.SqliteExecute(ConnString, Command, parms.ToArray());
+
             }
             catch (Exception ex)
             {
