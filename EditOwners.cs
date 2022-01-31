@@ -38,7 +38,8 @@ namespace TestWork2
                 inner join typeStreets on (typeStreets.id= streets.type)
             where houses.id = @house;";
 
-            dataGridView2.DataSource = SqliteHelper.SqliteExecuteReader(ConnString, Command, new SQLiteParameter("@house", House));
+            dataGridView2.DataSource = SqliteHelper.SqliteExecuteReader(ConnString, 
+                Command, new SQLiteParameter("@house", House));
 
             var dt = SqliteHelper.SqliteExecuteReader(ConnString, string.Format($"select * from owners"), null);
 
@@ -72,7 +73,8 @@ namespace TestWork2
 
         private void btnRefreshBtn_Click(object sender, EventArgs e)
         {
-            dataGridView2.DataSource = SqliteHelper.SqliteExecuteReader(ConnString, Command, null);
+            dataGridView2.DataSource = SqliteHelper.SqliteExecuteReader(ConnString, 
+                Command, new SQLiteParameter("@house", House));
         }
     }
 }
