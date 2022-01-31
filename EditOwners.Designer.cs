@@ -34,8 +34,12 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnAcceptEdit = new System.Windows.Forms.Button();
             this.btnRefreshBtn = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnAddOwner = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDeleteOwner = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -47,6 +51,7 @@
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView2.Location = new System.Drawing.Point(12, 12);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
@@ -77,6 +82,29 @@
             this.btnRefreshBtn.UseVisualStyleBackColor = true;
             this.btnRefreshBtn.Click += new System.EventHandler(this.btnRefreshBtn_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnAddOwner,
+            this.btnDeleteOwner});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(246, 80);
+            // 
+            // btnAddOwner
+            // 
+            this.btnAddOwner.Name = "btnAddOwner";
+            this.btnAddOwner.Size = new System.Drawing.Size(245, 24);
+            this.btnAddOwner.Text = "Добавить собственника";
+            this.btnAddOwner.Click += new System.EventHandler(this.btnAddOwner_Click);
+            // 
+            // btnDeleteOwner
+            // 
+            this.btnDeleteOwner.Name = "btnDeleteOwner";
+            this.btnDeleteOwner.Size = new System.Drawing.Size(245, 24);
+            this.btnDeleteOwner.Text = "Удалить собственника";
+            this.btnDeleteOwner.Click += new System.EventHandler(this.btnDeleteOwner_Click);
+            // 
             // EditOwners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -90,6 +118,7 @@
             this.Load += new System.EventHandler(this.EditOwners_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -100,5 +129,8 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Button btnAcceptEdit;
         private System.Windows.Forms.Button btnRefreshBtn;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem btnAddOwner;
+        private System.Windows.Forms.ToolStripMenuItem btnDeleteOwner;
     }
 }
