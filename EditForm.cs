@@ -236,8 +236,12 @@ namespace TestWork2
         }
 
 
+
         #endregion
 
-
+        private void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
